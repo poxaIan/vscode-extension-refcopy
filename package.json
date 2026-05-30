@@ -3,8 +3,13 @@
   "displayName": "RefCopy",
   "description": "Copy @file (line-range) reference to clipboard",
   "version": "0.0.1",
+  "publisher": "poxaIan",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/poxaIan/vscode-extension-refcopy.git"
+  },
   "engines": {
-    "vscode": "^1.120.0"
+    "vscode": "^1.85.0"
   },
   "categories": [
     "Other"
@@ -14,8 +19,15 @@
   "contributes": {
     "commands": [
       {
-        "command": "refcopy.helloWorld",
-        "title": "Hello World"
+        "command": "refcopy.copy",
+        "title": "RefCopy: Copy reference"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "refcopy.copy",
+        "key": "ctrl+shift+c",
+        "when": "editorTextFocus"
       }
     ]
   },
@@ -28,7 +40,7 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.120.0",
+    "@types/vscode": "^1.85.0",
     "@types/mocha": "^10.0.10",
     "@types/node": "22.x",
     "typescript-eslint": "^8.56.1",
