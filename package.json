@@ -2,8 +2,9 @@
   "name": "refcopy",
   "displayName": "RefCopy",
   "description": "Copy @file (line-range) reference to clipboard",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "poxa-ian",
+  "icon": "images/icon.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/poxaIan/vscode-extension-refcopy.git"
